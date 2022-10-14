@@ -51,6 +51,15 @@ public class ProductController {
     public ResponseEntity<?> getSingleProduct(@PathVariable Long id){
         Optional<Product> o = service.getProductById(id);
         if (o.isPresent()){
+
+            Optional<Category> categoryOptional = categoryService.getById(o.get().getCategoryId());
+
+            Category categoryDB = categoryOptional.get();
+
+            Product product = o.get();
+
+            product.setCategoryPicture(categoryDB.getPicture());
+
             return ResponseEntity.ok(o.get());
         }
 

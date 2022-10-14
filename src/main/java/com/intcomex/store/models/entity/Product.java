@@ -18,6 +18,8 @@ public class Product {
 
     private Long categoryId;
 
+    private String categoryPicture;
+
     private int quantityPerUnit;
 
     private double unitPrice;
@@ -30,6 +32,13 @@ public class Product {
 
     private boolean discontinued;
 
+    public String getCategoryPicture() {
+        return categoryPicture;
+    }
+
+    public void setCategoryPicture(String categoryPicture) {
+        this.categoryPicture = categoryPicture;
+    }
 
     public Long getProductId() {
         return productId;

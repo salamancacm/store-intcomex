@@ -17,6 +17,7 @@ public class Category {
     @NotEmpty
     private String description;
 
+    @NotEmpty
     private String picture;
 
     public Long getCategoryId() {
