@@ -28,7 +28,7 @@ public class ProductController {
     private CategoryService categoryService;
 
     @GetMapping("/Products/")
-    public ResponseEntity<List<Product>> getAllProducts(@RequestParam(value= "pageNumber", defaultValue = "10",
+    public ResponseEntity<List<Product>> getAllProducts(@RequestParam(value= "pageNumber", defaultValue = "1",
                                                         required = false) Integer pageNumber,
                                                         @RequestParam(value = "pageSize", defaultValue = "1",
                                                         required = false) Integer pageSize ){
