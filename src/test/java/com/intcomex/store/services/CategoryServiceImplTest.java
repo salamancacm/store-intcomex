@@ -2,6 +2,7 @@ package com.intcomex.store.services;
 
 import com.intcomex.store.models.entity.Category;
 import com.intcomex.store.repositories.CategoryRepository;
+import com.intcomex.store.repositories.services.CategoryServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

@@ -1,7 +1,7 @@
 package com.intcomex.store.controllers;
 
 import com.intcomex.store.models.entity.Supplier;
-import com.intcomex.store.services.SupplierService;
+import com.intcomex.store.repositories.services.SupplierService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

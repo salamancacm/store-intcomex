@@ -1,7 +1,7 @@
 package com.intcomex.store.controllers;
 
 import com.intcomex.store.models.entity.Category;
-import com.intcomex.store.services.CategoryService;
+import com.intcomex.store.repositories.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

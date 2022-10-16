@@ -2,6 +2,7 @@ package com.intcomex.store.services;
 
 import com.intcomex.store.models.entity.Supplier;
 import com.intcomex.store.repositories.SupplierRepository;
+import com.intcomex.store.repositories.services.SupplierServiceImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;

@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "2deea384-0f1a-4c9b-90b0-6cd3e31e3a6b",
+		"name": "Products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6976356"
+	},
+	"item": [
+		{
+			"name": "GetProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://store-intcomex.herokuapp.com/Products/?pageNumber=1&pageSize=3",
+					"protocol": "https",
+					"host": [
+						"store-intcomex",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"Products",
+						""
+					],
+					"query": [
+						{
+							"key": "pageNumber",
+							"value": "1"
+						},
+						{
+							"key": "pageSize",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Producto de prueba 1\",\r\n    \"supplierId\" : 4,\r\n    \"categoryId\" : 24 ,\r\n    \"quantityPerUnit\" : 50,\r\n    \"unitPrice\" : 1500.00,\r\n    \"unitsInStock\" : 30,\r\n    \"unitsInOrder\" : 3,\r\n    \"reorderLevel\" : \"Test\",\r\n    \"discontinued\" : false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://store-intcomex.herokuapp.com/Product/",
+					"protocol": "https",
+					"host": [
+						"store-intcomex",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"Product",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSingleProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://store-intcomex.herokuapp.com/Products/14",
+					"protocol": "https",
+					"host": [
+						"store-intcomex",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"Products",
+						"14"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://store-intcomex.herokuapp.com/Products/4",
+					"protocol": "https",
+					"host": [
+						"store-intcomex",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"Products",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

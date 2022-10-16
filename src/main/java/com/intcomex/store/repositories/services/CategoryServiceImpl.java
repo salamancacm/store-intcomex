@@ -1,4 +1,4 @@
-package com.intcomex.store.services;
+package com.intcomex.store.repositories.services;
 
 import com.intcomex.store.models.entity.Category;
 import com.intcomex.store.repositories.CategoryRepository;

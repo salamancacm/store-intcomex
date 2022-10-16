@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "b1979a21-a2f9-425e-9b18-810798294a29",
+		"name": "Categories",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6976356"
+	},
+	"item": [
+		{
+			"name": "GetCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://store-intcomex.herokuapp.com/Category/",
+					"protocol": "https",
+					"host": [
+						"store-intcomex",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"Category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateCategory",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryName\" : \"Servidores\",\r\n    \"description\" : \"Categoria de servidores\",\r\n    \"picture\" : \"https://concepto.de/wp-content/uploads/2019/05/servidor-e1557165670831.jpg\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://store-intcomex.herokuapp.com/Category/",
+					"protocol": "https",
+					"host": [
+						"store-intcomex",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"Category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteCategory",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://store-intcomex.herokuapp.com/Category/14",
+					"protocol": "https",
+					"host": [
+						"store-intcomex",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"Category",
+						"14"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
